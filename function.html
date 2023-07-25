@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript function</title>
+</head>
+<body>
+    <script>
+        let a=9;
+        let b=5;
+       let sum3= sum(a,b);
+        document.write(sum3);
+        document.write("<br>");
+
+
+        let c=9;
+        let d=3;
+       let sum4= sum(c,d);
+       document.write(sum4);
+       document.write("<br>");
+
+        let e=2;
+        let f=3;
+        let sum5= sum(e,f);//function call
+        document.write(sum5);
+        document.write("<br>");
+
+        //function 
+
+        function sum(a,b)
+        {
+            let sum2=a+b;
+            return sum2;
+        }
+
+        //function expression
+
+        let squre=function(num)
+        {
+            let sq=num*num;
+            return sq;
+        }
+        document.write(squre(4));
+    </script>
+</body>
+</html>

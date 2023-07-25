@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+</head>
+<body>
+    <h1>javascript variable</h1>
+           <p>  different between var ,let,const </p>
+    <script>
+    //     var name= "raushan";
+    //     name= "singh";
+    //    document.write("my name is "+name);
+
+     //  using let keyword work like a var
+
+    // let name="raushan";
+    // name="singh";
+    // console.log("my name is "+name);
+
+    // using const keywod
+
+//     const name="raushan";
+//    name="singh";
+//    console.log("my name is "+name);
+
+
+//different between function scope and block scope
+
+// function funjs(love)
+// {
+//     if(true)
+//     {  //block scope always executed first
+//         var name ="raushan";
+//         var sname="singh";
+//        // console.log("my name is "+name+" "+sname);
+//         //output = my name is raushan singh
+//     }
+//     // we can also call outside the block scope
+//     // because var is a function scope
+//     console.log("my name is "+name+" "+sname);
+//     //output=  my name is raushan singh(because of function scope )
+// }     
+// funjs(true);
+
+// function funjs(love)
+// {
+//     if(true)
+//     {  //block scope always executed first
+//         let name ="raushan";
+//         let sname="singh";
+//         //console.log("my name is "+name+" "+sname);
+//         //output = my name is raushan singh
+//     }
+//     // we can also call outside the block scope
+//     // because var is a function scope
+//     console.log("my name is "+name+" "+sname);
+//     //output=  Uncaught ReferenceError: sname is not defined
+//    // at funjs (index.html:60:40) 
+//    //because let and const only exucet in block scope not in function scope)
+// }     
+// funjs(true);
+
+//using const 
+
+// function funjs(love)
+// {
+//     if(true)
+//     {  //block scope always executed first
+//         const name ="raushan";
+//         const sname="singh";
+//        // console.log("my name is "+name+" "+sname);
+//         //output = my name is raushan singh
+//     }
+//     // we can also call outside the block scope
+//     // because var is a function scope
+//    console.log("my name is "+name+" "+sname);
+//     //output=  Uncaught ReferenceError: sname is not defined
+//    // at funjs (index.html:60:40) 
+//    //because let and const only exucet in block scope not in function scope)
+// }     
+// funjs(true);
+// function funjs(love)
+//  {
+//     var whowillwintoday="india";
+//     if(true)
+//     {
+//          var whowillwintoday="WI";
+//          console.log(whowillwintoday);
+//     }
+//     console.log(whowillwintoday);
+//     //output =WI
+//     //       =WI( VAR CHANGE THE VALSU BECAUSE VAR FUNCTION BLOCK)
+// }
+// funjs(true);
+
+//USING LET AND CONST
+
+// function funjs(love)
+//  {
+//     let whowillwintoday="india";
+//     if(true)
+//     {
+//          let whowillwintoday="WI";
+//          console.log(whowillwintoday);
+//     }
+//     console.log(whowillwintoday);
+//     //output =WI(first exucet block scope)
+//     // output=india(second excuted function scope)
+// }
+// funjs(true);
+//using const
+
+function funjs(love)
+ {
+    const whowillwintoday="india";
+    if(true)
+    {
+         const whowillwintoday="WI";
+         console.log(whowillwintoday);
+    }
+    console.log(whowillwintoday);
+    //output =WI(first exucet block scope)
+    // output=india(second excuted function scope)
+}
+funjs(true);
+ </script>
+</body>
+</html>
