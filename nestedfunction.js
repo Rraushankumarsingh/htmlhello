@@ -4,7 +4,8 @@ function addsquare(a,b)
     let ad=square(b);
      
     function square(num)
-    { 
+    {  
+        
        return num*num;
     }
     return ab+ad;
